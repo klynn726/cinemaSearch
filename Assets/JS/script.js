@@ -47,6 +47,15 @@ $("#searchBtn").click(function() {
         document.getElementById("userInput").value = ""    
         });
 }); 
+
+
+//  emptyMovieDisplay button functionality, it clears the poster from the screen (not local storage)  
+
+$('#emptyMovieDisplay').click(function(){
+  document.getElementById("movieDisplay2").innerHTML = ""
+});
+
+
      //joke API
         $('#joker').click(function(){
             fetch("https://official-joke-api.appspot.com/random_joke")
@@ -76,6 +85,3 @@ $("#searchBtn").click(function() {
             });
         });
 
-
-
-        
