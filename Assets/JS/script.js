@@ -11,7 +11,7 @@ $("#searchBtn").click(function() {
       // Selecting the input element and get its value 
       var inputVal = document.getElementById("userInput").value;
         $.ajax({ 
-          'url': "http://www.omdbapi.com/?apikey=3171b37b&t=" + inputVal,
+          'url': "https://www.omdbapi.com/?apikey=3171b37b&t=" + inputVal,
           'method': 'GET',
           'timeout': 0,
         }).then(function(response) {
